@@ -10,7 +10,9 @@ body{
     background-color: rgb(214, 0, 0);
 }
 .mem__container{
-    width: 75vw;
+    max-width: 50rem;
+    margin: auto;
+  
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
@@ -99,6 +101,7 @@ body{
 .controls__item {
     width: 1.1rem;
     height: 1.1rem;
+    padding: 1.5rem 1.5rem;
 }
 #slide1:checked ~ .content__container .slider__controls .control__label:nth-of-type(1),
 #slide2:checked ~ .content__container .slider__controls .control__label:nth-of-type(2),
@@ -155,4 +158,32 @@ body{
 
 #slide5:checked ~ .content__container #slides .slides__container__text {
   margin-left: -400%;
+}
+
+@media (max-width: 1024px) {
+    .mem__container{
+        width: 80vw;
+    }
+}
+@media (max-width: 768px) {
+    .mem__container {
+        width: 95vw;
+    }
+    .content__container{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .slide{
+        height: 65vh;
+        margin: 0.5rem;
+    }
+    .slide__text {
+        width: 100%;
+    }
+    .slider__controls {
+        align-self: center;
+        height: 2.5rem;
+        gap: 1rem;
+        background: none;
+    }
 }
