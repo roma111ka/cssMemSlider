@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+.mem__container{
+    width: 75vh;
+    height: 100vh;
+    margin: 0 auto;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.slides__container {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 60vh;
+}
+img{
+    max-width: 600px;
+    max-height: 500px;
+}
+.slide__img {
+    align-self: center;
+    max-width: 95%;
+    max-height: 70vh;
+  }
